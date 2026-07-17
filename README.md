@@ -17,6 +17,14 @@
 
 那些教程做出来的视频为什么烂，原因就藏在这句话里。它们把视频当成"生成画面"来做，但视频其实是一条**以声音为轴的时间线**。字幕文件是整条视频的唯一基准，画面、动画、音效全部要对齐到它。没有这条轴，你做出来的就是一堆各自为政的画面。
 
+### 简单使用
+
+❯ wechat-article-remotion skill 制作短视频：https://mp.weixin.qq.com/s/hMNI7upW8AGmii-VVNiknw
+
+❯  talking-head-remotion skill 制作： 介绍github项目 https://github.com/liangdabiao/Reddit_Business_Idea_Validator
+
+❯  sketch-story-remotion skill 制作： 制作一个手绘故事视频： 罗小福学skill遇到困难的故事
+
 ### 音频是整条视频的骨架
 
 大部分人做 AI 视频，声音是最后才想起来配的。这个顺序就错了。**声音应该是第一步。**
