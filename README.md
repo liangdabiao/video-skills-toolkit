@@ -1,9 +1,10 @@
 # Video Skills Toolkit
 
-这是一个把短视频生产流程沉淀成可复用 agent skills 的工具包。它不是单个成片项目，而是四类常用视频能力的模板和工作流集合：
+这是一个把短视频生产流程沉淀成可复用 agent skills 的工具包。它不是单个成片项目，而是五类常用视频能力的模板和工作流集合：
 
 - `talking-head-remotion`：口播视频 Remotion 工程模板，包含 16:9 Studio 风格、顶部章节进度、右下角圆形 PIP、字幕安全区、音效/BGM 规划和脚手架。
 - `wechat-article-remotion`：**微信公众号文章转视频** Remotion 工程模板，把任意一篇 mp.weixin.qq.com 文章转成 Studio 风格视频，完整保留公众号原文图（object-fit: contain 永不裁切）。无 PIP，主舞台给足空间给图片和文字。
+- `geometry-math-proof-remotion`：**数学证明 / 几何动画** Remotion 工程模板，深底高饱和 + 精准 SVG 几何 + 公式逐步揭示，3Blue1Brown / 可汗学院风格。勾股定理、欧拉公式、积分、算法可视化都能做。
 - `sketch-story-remotion`：小白学 AI 系列手绘故事视频模板，包含米白纸底、火柴人、Q 萌 AI 小智、手绘线框、箭头和红圈动画。
 - `audio-to-subtitles`：把音频/视频转成字幕和逐字稿的工具流，支持 SRT、VTT、JSON，也支持先生成 TTS 再转字幕。
 
@@ -58,6 +59,7 @@ video-skills-toolkit/
 └── skills/
     ├── talking-head-remotion/
     ├── wechat-article-remotion/
+    ├── geometry-math-proof-remotion/
     ├── sketch-story-remotion/
     └── audio-to-subtitles/
 ```
@@ -97,6 +99,24 @@ npm run still
 - 无 PIP，主舞台完全给图片和文字
 - 与 `talking-head-remotion` 共用字体 / SFX 公共素材库
 
+### Geometry Math Proof Remotion
+
+```bash
+cp -R skills/geometry-math-proof-remotion/templates/remotion-project ./demo-math-proof
+cd demo-math-proof
+npm install
+npx remotion still src/index.ts Proof out/check.png
+```
+
+核心特点：
+
+- **深底高饱和**：`#0d0d12` 深色画布 + 红蓝绿黄四色（黄=最终结论）
+- **精准 SVG 几何**：全部代码绘制，`stroke-dasharray` 做"被画出来"动画
+- **公式逐步揭示**：右侧 700×820 面板，一步一步推导，最终结论黄框大字
+- **字幕驱动时间轴**：先跑 TTS 拿真实时长，再回写 `F` 关键帧对象
+- **章节版式**：钩子(H) → 准备(P) → 推导 1~N → 消项/合成(E) → 收尾(F)
+- 适用：勾股定理、欧拉公式、积分、算法可视化、3Blue1Brown 风格视频
+
 ### Sketch Story Remotion
 
 ```bash
@@ -121,7 +141,7 @@ npx -y bun "$SKILL_DIR/scripts/main.ts" audio.mp3 --language zh-CN --out-dir sub
 
 如果要在文章里介绍，可以这样写：
 
-> 这套 Video Skills Toolkit 是我做视频时沉淀出来的一组 agent skills：一个负责口播视频模板，一个负责“小白学 AI”手绘故事模板，一个负责把音频转成字幕和逐字时间轴。它们把脚本、配音、字幕、画面节奏和 Remotion 工程结构串成了一条可复用的视频生产线。
+> 这套 Video Skills Toolkit 是我做视频时沉淀出来的一组 agent skills：口播视频、公众号文章转视频、数学证明几何动画、手绘故事视频、音频转字幕。它们把脚本、配音、字幕、画面节奏和 Remotion 工程结构串成了一条可复用的视频生产线。
 
 ## Notes
 
