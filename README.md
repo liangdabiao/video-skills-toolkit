@@ -8,6 +8,12 @@
 
 ![Talking Head Remotion template start](动画.gif)
 
+## 实际生成效果
+
+公众号文章转视频：https://www.bilibili.com/video/BV1LMKJ6cEwb/?vd_source=86926e418c83af75f6850b5546388a79
+
+github项目转视频介绍： https://www.bilibili.com/video/BV15uKJ68Etq/?vd_source=86926e418c83af75f6850b5546388a79
+
 ## What's Inside
 
 ```text
