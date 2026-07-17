@@ -19,6 +19,8 @@
 
 ### 简单使用
 
+首先配置好 minimax key ，用来生成语音。
+
 ❯ wechat-article-remotion skill 制作短视频：https://mp.weixin.qq.com/s/hMNI7upW8AGmii-VVNiknw
 
 ❯  talking-head-remotion skill 制作： 介绍github项目 https://github.com/liangdabiao/Reddit_Business_Idea_Validator
