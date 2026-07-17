@@ -1,0 +1,20 @@
+{
+  "skill_name": "talking-head-remotion",
+  "evals": [
+    {
+      "id": 1,
+      "prompt": "帮我新建一个 Remotion 口播视频工程，横屏 1920x1080，保留 Studio 现代主题、右下角圆形 PIP、底部字幕条和顶部章节进度条，先用占位数据跑起来。",
+      "expected_output": "Creates a runnable full-bleed Remotion project with the standard directory structure, StudioTalkingHead composition, mirrored top/bottom perspective grid background, docs, timeline placeholders, font loading, captions, PIP placeholder, SFX cue sheet, and verification commands."
+    },
+    {
+      "id": 2,
+      "prompt": "把现有 HyperFrames 口播模板迁移成 Remotion 版，结构不要变：DESIGN.md、PROJECT_BRIEF.md、TIMELINE.md、work/audio、work/captions、work/music 都要保留。",
+      "expected_output": "Produces a Remotion project that preserves the HyperFrames skill workflow and documentation while replacing index.html/GSAP with Remotion frame-driven React code and a full-bleed mirrored perspective grid background."
+    },
+    {
+      "id": 3,
+      "prompt": "我有一段口播 mp4 和一份脚本，帮我搭 Remotion 视频项目。先别锁音效，先预留 SFX/BGM 规划，字幕和场景时间要等最终音频对齐后再定。",
+      "expected_output": "Scaffolds the project, copies supplied assets into public/media and public/assets, creates caption/audio/music planning files, and avoids locking SFX/BGM before visual timing is stable."
+    }
+  ]
+}

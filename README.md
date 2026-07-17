@@ -1,0 +1,70 @@
+# Video Skills Toolkit
+
+这是一个把短视频生产流程沉淀成可复用 agent skills 的工具包。它不是单个成片项目，而是三类常用视频能力的模板和工作流集合：
+
+- `talking-head-remotion`：口播视频 Remotion 工程模板，包含 16:9 Studio 风格、顶部章节进度、右下角圆形 PIP、字幕安全区、音效/BGM 规划和脚手架。
+- `sketch-story-remotion`：小白学 AI 系列手绘故事视频模板，包含米白纸底、火柴人、Q 萌 AI 小智、手绘线框、箭头和红圈动画。
+- `audio-to-subtitles`：把音频/视频转成字幕和逐字稿的工具流，支持 SRT、VTT、JSON，也支持先生成 TTS 再转字幕。
+
+![Talking Head Remotion template start](动画.gif)
+
+## What's Inside
+
+```text
+video-skills-toolkit/
+├── examples/
+│   └── talking-head-template-start.png
+└── skills/
+    ├── talking-head-remotion/
+    ├── sketch-story-remotion/
+    └── audio-to-subtitles/
+```
+
+## Quick Start
+
+### Talking Head Remotion
+
+```bash
+python3 skills/talking-head-remotion/scripts/scaffold_talking_head_remotion_project.py \
+  --project-dir ./demo-talking-head \
+  --title "Demo Talking Head"
+
+cd demo-talking-head
+npm install
+npm run still
+```
+
+这个模板的初始状态会刻意留空中间舞台，只保留背景、顶栏、PIP 框和字幕样式。真正制作视频时，再按字幕和口播节奏逐个填入画面元素。
+
+### Sketch Story Remotion
+
+```bash
+cp -R skills/sketch-story-remotion/templates/remotion-project ./demo-sketch-story
+cd demo-sketch-story
+npm install
+npx remotion still Episode out/check.png
+```
+
+这个模板适合做“小白学 AI”这种手绘故事视频，全部图形由代码绘制，不依赖图片素材。
+
+### Audio To Subtitles
+
+```bash
+SKILL_DIR="$(pwd)/skills/audio-to-subtitles"
+npx -y bun "$SKILL_DIR/scripts/main.ts" audio.mp3 --language zh-CN --out-dir subtitles
+```
+
+本工具会调用外部服务生成字幕。你需要自己提供 MediaKit、R2 或 MiniMax 等 API 环境变量；仓库里不包含任何真实密钥。
+
+## Article Blurb
+
+如果要在文章里介绍，可以这样写：
+
+> 这套 Video Skills Toolkit 是我做视频时沉淀出来的一组 agent skills：一个负责口播视频模板，一个负责“小白学 AI”手绘故事模板，一个负责把音频转成字幕和逐字时间轴。它们把脚本、配音、字幕、画面节奏和 Remotion 工程结构串成了一条可复用的视频生产线。
+
+## Notes
+
+- 公开版已把本机绝对路径替换为占位路径，例如 `<VIDEO_WORKSPACE>` 和 `<NOTES_VAULT>`。
+- 仓库只保留来源明确的字体和音效素材；真实项目里的私有素材、API key 和 `.env` 文件不应提交。
+- `audio-to-subtitles` 只提交脚本和说明，运行时需要你自己的服务凭证。
+

@@ -1,0 +1,37 @@
+# Node
+node_modules/
+npm-debug.log
+yarn-error.log
+
+# Remotion
+out/
+.cache/
+remotion.config.*.tmp
+*.mp4
+*.mp3
+*.wav
+*.m4a
+*.webm
+*.gif
+*.png
+*.jpg
+*.jpeg
+*.webp
+*.svg
+
+# 编辑器
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# 环境
+.env
+.env.local
+.env.*.local
+
+# 渲染输出（保留 renders/.gitkeep 即可）
+renders/*.mp4
+renders/*.png
+renders/preview-low.mp4
+renders/frame-*.png
