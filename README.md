@@ -23,15 +23,15 @@
 
 首先配置好 minimax key ，用来生成语音。
 
-❯ wechat-article-remotion skill 制作短视频：https://mp.weixin.qq.com/s/hMNI7upW8AGmii-VVNiknw
+❯ wechat-article-remotion skill 制作短视频： mp.weixin.qq.com/s/hMNI7upW8AGmii-VVNiknw
 
 公众号文章转视频：https://www.bilibili.com/video/BV1LMKJ6cEwb/?vd_source=86926e418c83af75f6850b5546388a79
 
-❯  talking-head-remotion skill 制作： 介绍github项目 https://github.com/liangdabiao/Reddit_Business_Idea_Validator
+❯  talking-head-remotion skill 制作： 介绍github项目 github.com/liangdabiao/Reddit_Business_Idea_Validator
 
 ![Talking Head Remotion template start](动画.gif)
 
-❯  sketch-story-remotion skill 制作： 制作一个手绘故事视频： 罗小福学skill遇到困难的故事
+
 
 ❯ 数学证明视频：反证法证明√2是无理数
 
@@ -41,10 +41,10 @@
 
 ❯ paper-cutout-remotion skill 制作： 制作一个纸片风分层动画视频：  苏东坡 赤壁怀古
 
-![](image.png)
+![](image.jpg)
 视频成果：https://www.bilibili.com/video/BV1akKF6KEw9/?vd_source=86926e418c83af75f6850b5546388a79
 
- 
+❯  sketch-story-remotion skill 制作： 制作一个手绘故事视频： 罗小福学skill遇到困难的故事
 
 ### 音频是整条视频的骨架
 
