@@ -25,15 +25,26 @@
 
 ❯ wechat-article-remotion skill 制作短视频：https://mp.weixin.qq.com/s/hMNI7upW8AGmii-VVNiknw
 
+公众号文章转视频：https://www.bilibili.com/video/BV1LMKJ6cEwb/?vd_source=86926e418c83af75f6850b5546388a79
+
 ❯  talking-head-remotion skill 制作： 介绍github项目 https://github.com/liangdabiao/Reddit_Business_Idea_Validator
+
+![Talking Head Remotion template start](动画.gif)
 
 ❯  sketch-story-remotion skill 制作： 制作一个手绘故事视频： 罗小福学skill遇到困难的故事
 
 ❯ 数学证明视频：反证法证明√2是无理数
 
+![](ScreenShot_2026-07-22_185017_922.png)
+视频成果：https://www.bilibili.com/video/BV1jgKH6qEu5/?vd_source=86926e418c83af75f6850b5546388a79
+
+
 ❯ paper-cutout-remotion skill 制作： 制作一个纸片风分层动画视频：  苏东坡 赤壁怀古
 
+![](image.png)
+视频成果：https://www.bilibili.com/video/BV1akKF6KEw9/?vd_source=86926e418c83af75f6850b5546388a79
 
+ 
 
 ### 音频是整条视频的骨架
 
@@ -49,7 +60,7 @@
        一切的起点
 ```
 
-![Talking Head Remotion template start](动画.gif)
+
 
 ## 实际生成效果
 
